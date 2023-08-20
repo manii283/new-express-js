@@ -12,9 +12,28 @@ app.get("/about", (req, res) => {
   res.send("welcom to my about page");
 });
 
+// app.get("/contact", (req, res) => {
+//   // res.send('welcom to my contact page')
+//   res.send([
+//     {
+//       id: 1,
+//       name: "manisha",
+//     },
+//     {
+//       id: 2,
+//       name: "aditya",
+//     },
+//     {
+//       id: 3,
+//       name: "vidhi",
+//     },
+//   ]);
+// });
+
+
 app.get("/contact", (req, res) => {
   // res.send('welcom to my contact page')
-  res.send([
+  res.json([
     {
       id: 1,
       name: "manisha",
